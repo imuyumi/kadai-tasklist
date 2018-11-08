@@ -17,4 +17,9 @@ class UsersController extends Controller
         return view('users.show',
         ['user'=>$user,]);
     }
+     public function destroy($id){
+        $user=User::find($id);
+        $user->delete();
+       return redirect('/');
+    }
 }

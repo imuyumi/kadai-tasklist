@@ -22,6 +22,6 @@
             @endforeach
         </table>
     @endif
-    {!! link_to_route('tasks.create','create new task',null,['class'=>'btn btn-success']) !!}
+    {!! link_to_route('users.show','create new task',['id'=>$user->id],['class'=>'btn btn-success']) !!}
 
 @endsection
